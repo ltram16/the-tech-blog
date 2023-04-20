@@ -7,6 +7,7 @@ const { User } = require('../../models');
 // POST /api/users is a registration route for creating a new user
 router.post('/', async (req, res) => {
   try {
+    console.log(req.body.name);
     const newUser = await User.create({
       username: req.body.username,
       password: req.body.password,
@@ -20,6 +21,7 @@ router.post('/', async (req, res) => {
       res.json(newUser);
     });
   } catch (err) {
+    console.log(err);
     res.status(500).json(err);
   }
 });
