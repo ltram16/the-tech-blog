@@ -1,19 +1,30 @@
 
-{{! Unstyled Login View boilerplate is completed for you }}
 
-<h2>Login</h2>
-
-<form id="login-form" class="card-body">
-  <div>
-    <label for="username-input-login">Username</label>
-    <input type="text" id="username-input-login" />
-  </div>
-  <div>
-    <label for="password-input-login" class="form-label">Password</label>
-    <input type="password" id="password-input-login" />
-  </div>
-  <button type="submit">Login!</button>
-  <a type="button" href="/signup">Sign up instead</a>
-</form>
-
-<script src="/js/login.js"></script>
+<div class="login">
+     <form id="login-form">
+         <label id="loginLabel"></label>
+         <h2 class="title">Log In</h2>
+         <div class="input-field">
+         <input
+             id="username-input-login"
+             type="text"
+             name="username"
+             placeholder="Username"
+             required=""
+         >
+         </div>
+         <br></br>
+         <div class="input-field">
+         <input
+             id="password-input-login"
+             type="password"
+             name="password"
+             placeholder="Password"
+             required=""
+         >
+         </div>
+         <br></br>
+     <button type="submit" id="login-submit">Log In</button>
+     <p>Need to sign up? <a href="/signup">Sign up</a></p>
+     </form>
+ </div>
